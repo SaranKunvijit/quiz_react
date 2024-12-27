@@ -1,0 +1,30 @@
+.con{
+  background-color: rgb(248, 184, 65);
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  padding:20px 40px;
+  margin-left: 35%;
+  margin-right: 35%; 
+  margin-top: 50px;
+  padding-right: 60;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); 
+}
+.quiz{
+  margin-left: 20px;
+}
+.heads{
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.4);
+}
+.save{
+  border: none;
+  background-color: rgb(255, 162, 0);
+}
+
+.save:hover{
+  background-color: rgb(255, 202, 102);
+  color: rgb(57, 57, 57);
+}

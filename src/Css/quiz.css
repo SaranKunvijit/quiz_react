@@ -1,0 +1,39 @@
+.cons{
+    background-color: rgb(248, 184, 65);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding:20px 40px;
+    margin-left: 35%;
+    margin-right: 35%; 
+
+    padding-right: 60;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); 
+  }
+  .quiz-question {
+    display: flex;
+    flex-direction: column; /* ทำให้เรียงในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่ตรงกลาง */
+    gap: 15px; 
+  }
+  
+  .quiz-question .answer {
+    padding: 10px 120px; /* เพิ่มขนาดปุ่ม */
+    background-color: #fff; /* พื้นหลังปุ่ม */
+    border-radius: 10px; /* ทำมุมโค้ง */
+    cursor: pointer;
+    font-size: 12px;
+    width: 100%; /* ปรับให้ปุ่มกว้างเต็ม */
+    max-width: 300px; /* จำกัดความกว้างสูงสุด */
+    text-align: center;
+    border: none;
+  }
+  
+  .quiz-question .answer:hover {
+    background-color: rgb(255, 202, 102); /* เปลี่ยนสีปุ่มเมื่อ hover */
+    color: white; /* เปลี่ยนสีข้อความเมื่อ hover */
+  }
+  .icon-close {
+    padding:10px ;
+  }
