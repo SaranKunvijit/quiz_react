@@ -1,12 +1,11 @@
-import { FC, useContext } from "react";
-import { QuizContext } from "../contexts/QuizContext";
+import { FC } from "react";
+import { doQuizhook } from "../hook/hookpage"; // นำเข้าจากไฟล์ที่รวม
 import "../Css/quiz.css";
 import { Finish } from "../component/Finish";
 import { Doquiz } from "../component/Doquiz";
 
 export const DoQuizPage: FC = () => {
-  const { quizs, quizIndex, score, handleAnswer, resetQuiz } = useContext(QuizContext);
-  const isFinished = quizIndex >= quizs.length;
+  const { quizs, quizIndex, score, handleAnswer, resetQuiz, isFinished } = doQuizhook();
 
   return (
     <div className="cons">

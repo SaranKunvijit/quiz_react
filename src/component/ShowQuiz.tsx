@@ -1,12 +1,6 @@
 import { FC } from "react";
 import '../Css/showquiz.css';
-
-type Question = {
-  id: number;
-  quizText: string;
-  options: string[];
-  correctAnswer: string;
-};
+import { Question } from "../types/question";
 
 type ShowQuizProps = {
   quizs: Question[];

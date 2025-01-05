@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000/', // URL ของ Backend
+  baseURL: 'http://localhost:3000/', 
 });
 
 // ฟังก์ชันสำหรับเพิ่มคำถามใหม่

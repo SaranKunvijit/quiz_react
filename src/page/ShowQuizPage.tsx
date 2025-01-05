@@ -1,14 +1,19 @@
-import { FC, useContext } from "react";
-import { ShowQuiz } from "../component/ShowQuiz";
-import { QuizContext } from "../contexts/QuizContext";
-import { useNavigate } from "react-router-dom";
 
-export const ShowQuizPage: FC = () => {
-  const { quizs, deleteQuiz, } = useContext(QuizContext);
-  const navigate = useNavigate();
+
+import { ShowQuiz } from "../component/ShowQuiz";
+import { showQuizhook } from "../hook/hookpage";
+
+export const ShowQuizPage = () => {
+  const { quizs, deleteQuiz, startEditing } = showQuizhook();
+
   return (
     <div>
-      <ShowQuiz quizs={quizs} deleteQuiz={deleteQuiz} startEditing={(id: number) => navigate(`/edit/${id}`)} />
+      <ShowQuiz
+        quizs={quizs}
+        deleteQuiz={deleteQuiz}
+        startEditing={startEditing}
+      />
     </div>
   );
 };
+
